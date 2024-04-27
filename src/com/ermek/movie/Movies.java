@@ -1,17 +1,16 @@
 package com.ermek.movie;
 
-import java.util.Arrays;
+import java.util.List;
 
 
 public class Movies {
-    public Movie [] movies;
-
+    public List<Movie> movies;
 
 
     @Override
     public String toString() {
         return "Movies{" +
-                "list=" + Arrays.toString(movies) +
+                "movies=" + movies +
                 '}';
     }
 }

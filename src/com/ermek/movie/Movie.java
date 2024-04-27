@@ -1,6 +1,5 @@
 package com.ermek.movie;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Movie {
@@ -8,7 +7,7 @@ public class Movie {
     private int year;
     private String description;
     private Director director;
-    private Cast [] cast;
+    private List<Cast> cast;
 
     @Override
     public String toString() {
@@ -17,7 +16,7 @@ public class Movie {
                 ", year=" + year +
                 ", description='" + description + '\'' +
                 ", director=" + director +
-                ", cast=" + Arrays.toString(cast) +
+                ", cast=" + cast +
                 '}';
     }
 }
